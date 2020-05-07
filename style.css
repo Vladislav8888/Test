@@ -1,0 +1,260 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+  }
+  
+  html {
+    box-sizing: border-box;
+  }
+  
+  a {
+    display: block;
+    text-decoration: none;
+  }
+  
+  img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+  }
+  
+  ul,
+  ol {
+    list-style: none;
+  }
+  
+  .clearfix::after {
+    display: table;
+    content: "";
+    clear: both;
+  }
+
+  .visually-hidden {
+    position: absolute;
+    clip: rect(0 0 0 0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+  }
+
+  body {
+    background-color: #171717;
+
+  }
+  
+  .container {
+      width: 960px;
+      margin-left: auto;
+      margin-right: auto;
+      /* display: flex; */
+      justify-content: space-between;
+      align-items: center;
+  }
+
+  .header {
+      display: flex;
+  }
+
+  nav {
+      display: flex;
+  }
+
+  .navigation-wrapper {
+      display: flex;
+      height: 96px;
+      align-items: center;
+      position: relative;
+  }
+
+  .navigation-wrapper::before {
+      content: "";
+      position: absolute;
+      display: block;
+      background-color: #414144;
+      width: 100%;
+      height: 1px;
+      bottom: 1px;
+      z-index: -1;
+  }
+
+  .logo {
+      margin-left: 40px;
+  }
+
+
+  .navigation {
+    display: flex;
+    justify-content: space-between;
+    width: 438px;
+  }
+
+ 
+
+  .navigation__item {
+      
+      margin-right: 30px;
+    
+  }
+
+  .navigation__item:last-child {
+    margin-right: 0;
+  }
+
+  .navigation__link {
+    color: #ffffff;
+    font-family: 'Muli', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: -1px;
+    position: relative;
+    transition: 0.2s linear;
+  }
+
+  .navigation__link::before {
+    content: "";
+    position: absolute;
+    display: block;
+    background-color: #ffe400;
+    width: 84px;
+    height: 3px;
+    bottom: -40px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.2s linear; 
+  }
+
+  .navigation__link:hover::before {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .navigation__link:hover {
+    color: #ffe400;
+  }
+
+  .log {
+    display: flex;
+    justify-content: space-between;
+    width: 190px;
+    margin: 0;
+    font-family: 'Muli', sans-serif;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 400;
+    align-items: center;
+  }
+
+  .sing-in {
+      cursor: pointer;
+      transition: all 0.2s linear;
+  }
+
+  .sing-in:hover {
+    color: #ffe400;
+  }
+
+  .registration {
+      cursor: pointer;
+      color: #ffe400;
+      width: 124px;
+      height: 36px;
+      text-align: center;
+      padding-top: 7px;
+      border: 1px solid #ffe400;
+  }
+
+  .leng {
+    font-family: 'Muli', sans-serif;
+    margin-right: 60px;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 400;
+    position: relative;
+  }
+
+  .leng::before {
+      content: "";
+      background-image: url(./images/Rectangle_1.svg);
+      background-repeat: no-repeat;
+      background-position: center;
+      width: 24px;
+      height: 18px;
+      position: absolute;
+      left: -36px;
+      top: 1px;
+      z-index: 33;
+  }
+
+  .leng::after {
+    content: "";
+    background-image: url(./images/Rectangle\ 678.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 24px;
+    height: 18px;
+    position: absolute;
+    right: 0;
+    left: 58px;
+    bottom: 0px;
+}
+
+.artical__title {
+    color: #ffffff;
+    font-family: 'Muli', sans-serif;
+    font-size: 60px;
+    font-weight: 400;
+    width: 606px;
+    margin-top: 120px;
+    margin-right: 0;
+    position: relative;
+}
+
+.lean-now-link {
+    width: 218px;
+    height: 50px;
+    color: #000;
+    background-color:#ffe400;
+    font-family: 'Muli', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    text-align: center;
+    padding-top: 12px;
+    border-radius: 3px;
+    margin-top: 46px;
+    position: relative;
+}
+
+
+.artical__preview {
+   position: relative;
+}
+
+.preview {
+    position: absolute;
+    right: -252px;
+    top: -462px;
+    z-index: 35;
+}
+
+.credit-position {
+    position: relative;
+}
+
+.credit {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 80px;
+    background-color:#ffe400;
+    margin-top: 180px;
+    z-index: 40;
+}
+
+.credit__list {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 21px;
+}
